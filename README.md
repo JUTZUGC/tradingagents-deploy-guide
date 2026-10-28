@@ -1,7 +1,7 @@
 # TradingAgents 一键部署指南
 
 > 第三方部署指南 · 非 TradingAgents 官方仓库。官方项目：[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
-> 内容来自官方文档（2026-10-26）。项目迭代快，请以[官方文档](https://github.com/TauricResearch/TradingAgents#installation-and-cli)为准。
+> 内容来自官方文档（2026-10-28）。项目迭代快，请以[官方文档](https://github.com/TauricResearch/TradingAgents#installation-and-cli)为准。
 
 [![⚡ 一键部署](https://img.shields.io/badge/%E2%9A%A1_%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2-%E6%8E%A8%E8%8D%90%E7%99%BE%E5%BA%A6%E6%90%AD%E5%AD%90-2ea44f?style=for-the-badge)](#一键部署推荐用百度搭子)
 
@@ -48,7 +48,7 @@ TradingAgents 是开源的多 Agent LLM 金融交易研究框架（协议：Apac
 
 | 优点 | 说明 |
 |---|---|
-| 115k stars | Apache-2.0 开源，附论文与活跃社区 |
+| 117.6k stars | Apache-2.0 开源，附论文与活跃社区 |
 | 流程完整 | 分析师、研究员、交易员、风控多角色协作 |
 | 两种部署 | 本地 pip 与 Docker 都支持 |
 | 模型可选 | OpenAI 兼容接口，也能接 Ollama 本地模型 |
@@ -62,7 +62,7 @@ TradingAgents 是开源的多 Agent LLM 金融交易研究框架（协议：Apac
 | 研究性质 | 结果仅供研究，不能当投资建议使用 |
 | Docker 方案要另配 | compose 运行需要先填好 .env |
 
-> 以上基于官方文档与社区反馈整理（2026-10-26），以官方最新文档为准。
+> 以上基于官方文档与社区反馈整理（2026-10-28），以官方最新文档为准。
 
 ## 快速部署（官方方式）
 
@@ -91,7 +91,7 @@ echo "请编辑 .env 填入模型 API Key，然后运行 .venv/bin/tradingagents
 
 项目本身不含 MCP；它是 Python 框架 + CLI。本仓库的 MCP 只提供安装步骤、API Key 配置与常见坑。
 
-本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-26）。
+本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-28）。
 
 **在百度搭子里接入**：客户端不扫描仓库里的配置文件，需要由百度搭子通过工作区的 MCP 注册接口注册，并且必须使用**绝对路径**（运行时的工作目录是会话目录，不是仓库目录）：
 
@@ -134,5 +134,5 @@ echo "请编辑 .env 填入模型 API Key，然后运行 .venv/bin/tradingagents
 ## 免责声明
 
 本仓库为第三方指南，与 TradingAgents 官方无隶属关系，不代表官方立场。
-教程基于官方文档编写（更新日期：2026-10-26），项目迭代快，请以[官方文档](https://github.com/TauricResearch/TradingAgents#installation-and-cli)为准。
+教程基于官方文档编写（更新日期：2026-10-28），项目迭代快，请以[官方文档](https://github.com/TauricResearch/TradingAgents#installation-and-cli)为准。
 因使用本教程产生的部署问题，请先在官方仓库的 issue 中检索。
